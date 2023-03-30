@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(shark_tank_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  .logo:hover{
+    color: greenyellow;
+  }
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5%;
+  }
+  nav .logo{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+  }
+  nav ul li{
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  nav .navLinks button{
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: lightgreen;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  nav ul li:hover{
+    background-color: lightgreen;
+  }
+  nav .menubtn{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+  }
+   
+  /* responsive navbar css */
+  @media screen and (max-width: 600px) {
+    nav .menubtn{
+      display: flex;
+    }
+    nav .navLinks{
+      display: none;
+    }
+    .sideNav {
+      display: block !important;
+    }
+  }
+   
+  .sideNav{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: lightgreen;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+  }
+   
+  .sideNav a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+  }
+  .sideNav a:hover{
+    color: white;
+  }
+  .sideNav .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }

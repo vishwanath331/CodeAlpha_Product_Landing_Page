@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Product Landing Page</title>
+</head>
+<body>
+ <nav>
+   <div class="logo">Shark Tank India</div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="service.html">Services</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       <li style="background-color: palevioletred;"><a href="login_page.html">Login</a></li>
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="service.html">Services</a>
+     <a href="contact.html">Contact</a>
+     <a href="login_page.html"><button type="button" style="background-color: skyblue;">Login</button> </a>
+   </div>
+
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+
+</body>
+</html>

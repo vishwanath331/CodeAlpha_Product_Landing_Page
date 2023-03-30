@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <style>
+header {
+  background-color: #388087;
+  color: #fff;
+  padding: 10px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:  powderblue;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: lightcyan
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact h2 {
+    background-color: skyblue;
+  font-size: 36px;
+  width: 30%;
+  margin: 0px auto 30px auto;
+  font-weight: bold;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact label {
+    background-color: lightblue;
+    width: 15%;
+    text-align: center;
+    align-self: center;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact button {
+  background-color: #4CAF50;
+  color:white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #2E8B57;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login_page.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="contact">
+    <center><h2>Contact Me</h2></center>
+      <center><label for="name">Name</label></center>
+      <input type="text" id="name" name="name" required>
+  
+      <center><label for="email">Email</label></center>
+      <input type="email" id="email" name="email" required>
+  
+      <center><label for="subject">Subject</label></center>
+      <input type="text" id="subject" name="subject" required>
+  
+      <center><label for="message">Message</label></center>
+      <textarea id="message" name="message" required></textarea>
+  
+      <center><button type="submit">Send</button></center>
+    </form>
+  </div>
+</main>
+<footer>
+  <center><p>&copy; 2023 Shark Tank India</p></center>
+</footer>
+</body>
+  
